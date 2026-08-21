@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b0d12" />
+  <meta name="description" content="Project Goat — a fan-made Yu-Gi-Oh! GOAT Format campaign and dueling project." />
+  <title>Project Goat</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="Project Goat home">
+        <span>PROJECT GOAT</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">MENU</button>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#gameplay">Gameplay</a>
+        <a href="#gallery">Gallery</a>
+        <a href="https://github.com/johnson-cooper/project-goat/releases" target="_blank" rel="noopener">Releases</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero section-frame">
+        <div class="hero-copy" data-md="content/hero.md">
+          <p class="loading">Loading...</p>
+        </div>
+        <div class="hero-media">
+          <div class="video-frame">
+            <video controls muted playsinline preload="metadata" poster="assets/images/campaign-hub.jpg">
+              <source src="assets/video/project-goat-demo.mp4" type="video/mp4" />
+              Your browser does not support embedded video.
+            </video>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="content-section section-frame">
+        <div class="section-kicker">About the project</div>
+        <div class="md-content" data-md="content/about.md"><p class="loading">Loading...</p></div>
+      </section>
+
+      <section id="features" class="content-section section-frame split-accent">
+        <div class="section-kicker">Core features</div>
+        <div class="md-content feature-grid" data-md="content/features.md"><p class="loading">Loading...</p></div>
+      </section>
+
+      <section id="gameplay" class="content-section section-frame">
+        <div class="section-kicker">Gameplay</div>
+        <div class="md-content" data-md="content/gameplay.md"><p class="loading">Loading...</p></div>
+      </section>
+
+      <section id="gallery" class="gallery-section section-frame">
+        <div class="section-kicker">Screenshots</div>
+        <h2>Gallery</h2>
+        <p class="section-intro">Frames captured from the supplied Project Goat gameplay video.</p>
+        <div class="gallery-grid">
+          <button class="gallery-card" data-full="assets/images/campaign-hub.jpg">
+            <img src="assets/images/campaign-hub.jpg" alt="Project Goat campaign hub and pack selection" />
+            <span>Campaign Hub</span>
+          </button>
+          <button class="gallery-card" data-full="assets/images/gameplay-01.jpg">
+            <img src="assets/images/gameplay-01.jpg" alt="Project Goat gameplay screenshot one" />
+            <span>Duel Sequence I</span>
+          </button>
+          <button class="gallery-card" data-full="assets/images/gameplay-02.jpg">
+            <img src="assets/images/gameplay-02.jpg" alt="Project Goat gameplay screenshot two" />
+            <span>Duel Sequence II</span>
+          </button>
+          <button class="gallery-card" data-full="assets/images/gameplay-03.jpg">
+            <img src="assets/images/gameplay-03.jpg" alt="Project Goat gameplay screenshot three" />
+            <span>Duel Sequence III</span>
+          </button>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer section-frame">
+      <p>PROJECT GOAT — fan-made project showcase.</p>
+      <p class="muted">Yu-Gi-Oh! and related names, card artwork, and trademarks belong to their respective owners. This site is not affiliated with or endorsed by Konami.</p>
+    </footer>
+  </div>
+
+  <dialog id="lightbox" class="lightbox">
+    <button class="lightbox-close" aria-label="Close image">×</button>
+    <img alt="Expanded Project Goat screenshot" />
+  </dialog>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>
