@@ -1,7 +1,0 @@
-# Required for the emulator's WebAssembly threads (SharedArrayBuffer) to work.
-# Without cross-origin isolation, Play.js fails to initialize entirely.
-# Recognized by Netlify and Cloudflare Pages. Other hosts (S3/CloudFront,
-# nginx, Vercel, etc.) need the equivalent configured at the server/CDN level.
-/*
-  Cross-Origin-Opener-Policy: same-origin
-  Cross-Origin-Embedder-Policy: require-corp
